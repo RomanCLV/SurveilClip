@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Views">
+      <UniqueIdentifier>{38f9e90b-eaa9-4a48-be29-817ee2a253e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Models">
+      <UniqueIdentifier>{03effef1-6441-44cf-91c0-727280a75e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Models">
+      <UniqueIdentifier>{518e0c96-c1d7-49c0-a480-ad35b0c86ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Views">
+      <UniqueIdentifier>{95ee2039-13b4-4baf-a2c5-22e59f7f4d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Controllers">
+      <UniqueIdentifier>{79070a45-1a74-41d4-93a3-bd046b24b873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Controllers">
+      <UniqueIdentifier>{23e1f7f5-6fe0-4044-a5e6-5a1aadd89cf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Widgets">
+      <UniqueIdentifier>{f35708a1-f4ac-44a6-b07b-e5535b740bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Widgets">
+      <UniqueIdentifier>{1a8ffb23-3e27-476c-8d65-353bf5f88184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{fed81157-e732-41ae-b3f2-7f3f0dda6195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helpers">
+      <UniqueIdentifier>{acc2713b-ed98-4766-81d2-12c95b0f087c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Services">
+      <UniqueIdentifier>{ef21e346-87ac-4790-9147-105555f85e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Services">
+      <UniqueIdentifier>{82aa2cec-e176-4ff8-a954-d1f5f4867e5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Stores">
+      <UniqueIdentifier>{ba9d05f9-15c1-49c8-8f5f-21d4afe27e9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Factories">
+      <UniqueIdentifier>{9d09a592-779c-4aa5-be84-d9089184196f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Services\VideoProcessors">
+      <UniqueIdentifier>{d65254d3-d4fa-4f93-95ae-2e546239ee21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stores">
+      <UniqueIdentifier>{f8538812-036b-472f-b799-d603ccc3a177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Factories">
+      <UniqueIdentifier>{0b2ff0e9-9dc8-483b-8e37-bd1abab48b36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Services\VideoProcessors">
+      <UniqueIdentifier>{a69d8aba-30c0-4a55-a800-e2d8cf2e7bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Services\VideoProcessors\Debugable">
+      <UniqueIdentifier>{9d4911b2-2098-42a8-99c6-3a02d031a12a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Services\VideoProcessors\Base">
+      <UniqueIdentifier>{0450c40b-989d-4c9c-8a6a-41e310ee55cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Services\VideoProcessors\Base">
+      <UniqueIdentifier>{6c0e39ee-61f6-4384-8931-cd9eac4e9d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Services\VideoProcessors\Debugable">
+      <UniqueIdentifier>{1d8e215c-88cf-4c1f-98ca-99322da2d6a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Services\VideoProcessors\Configurable">
+      <UniqueIdentifier>{1543410b-b1ae-452f-a386-5601e6e52d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Models\Parameters">
+      <UniqueIdentifier>{74d9471d-abbd-4b39-bb13-b586fd1914bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Models\Parameters">
+      <UniqueIdentifier>{b786379c-53f3-46ed-a8c2-fc217d2460ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Models\Parameters\Base">
+      <UniqueIdentifier>{602370af-2362-4647-a314-e3cfcf7b9c70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="SurveilClip.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="SurveilClipUI.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SurveilClipModel.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="SurveilClipController.cpp">
+      <Filter>Source Files\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ParametersController.cpp">
+      <Filter>Source Files\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="SurveilClipWindow.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="AppStore.cpp">
+      <Filter>Source Files\Stores</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewFactory.cpp">
+      <Filter>Source Files\Factories</Filter>
+    </ClCompile>
+    <ClCompile Include="MockVideoProcessor.cpp">
+      <Filter>Source Files\Services\VideoProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoProcessorOpenCV.cpp">
+      <Filter>Source Files\Services\VideoProcessors</Filter>
+    </ClCompile>
+    <ClCompile Include="ParametersWindow.cpp">
+      <Filter>Source Files\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="ParametersModel.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoProcessorBase.cpp">
+      <Filter>Source Files\Services\VideoProcessors\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoProcessorDebugable.cpp">
+      <Filter>Source Files\Services\VideoProcessors\Debugable</Filter>
+    </ClCompile>
+    <ClCompile Include="ParameterBase.cpp">
+      <Filter>Source Files\Models\Parameters</Filter>
+    </ClCompile>
+    <ClCompile Include="ParameterGroup.cpp">
+      <Filter>Source Files\Models\Parameters</Filter>
+    </ClCompile>
+    <ClCompile Include="NumericalParameter.cpp">
+      <Filter>Source Files\Models\Parameters</Filter>
+    </ClCompile>
+    <ClCompile Include="NumericalParameterWidget.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="BoolParameter.cpp">
+      <Filter>Source Files\Models\Parameters</Filter>
+    </ClCompile>
+    <ClCompile Include="BoolParameterWidget.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="ListParameterWidget.cpp">
+      <Filter>Source Files\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCVFrameDebug.cpp">
+      <Filter>Source Files\Services\VideoProcessors\Debugable</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameDebug.cpp">
+      <Filter>Source Files\Services\VideoProcessors\Debugable</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SurveilClipModel.h">
+      <Filter>Header Files\Models</Filter>
+    </QtMoc>
+    <QtMoc Include="SurveilClipController.h">
+      <Filter>Header Files\Controllers</Filter>
+    </QtMoc>
+    <QtMoc Include="SurveilClipVideoWidget.h">
+      <Filter>Header Files\Widgets</Filter>
+    </QtMoc>
+    <QtMoc Include="Tools.h">
+      <Filter>Header Files\Helpers</Filter>
+    </QtMoc>
+    <QtMoc Include="SurveilClipWindow.h">
+      <Filter>Header Files\Views</Filter>
+    </QtMoc>
+    <QtMoc Include="ParametersWindow.h">
+      <Filter>Header Files\Views</Filter>
+    </QtMoc>
+    <QtMoc Include="MockVideoProcessor.h">
+      <Filter>Header Files\Services\VideoProcessors</Filter>
+    </QtMoc>
+    <QtMoc Include="VideoProcessorOpenCV.h">
+      <Filter>Header Files\Services\VideoProcessors</Filter>
+    </QtMoc>
+    <QtMoc Include="ParametersController.h">
+      <Filter>Header Files\Controllers</Filter>
+    </QtMoc>
+    <QtMoc Include="ParametersModel.h">
+      <Filter>Header Files\Models</Filter>
+    </QtMoc>
+    <QtMoc Include="VideoProcessorDebugable.h">
+      <Filter>Header Files\Services\VideoProcessors\Debugable</Filter>
+    </QtMoc>
+    <QtMoc Include="VideoProcessorBase.h">
+      <Filter>Header Files\Services\VideoProcessors\Base</Filter>
+    </QtMoc>
+    <QtMoc Include="ParameterGroup.h">
+      <Filter>Header Files\Models\Parameters</Filter>
+    </QtMoc>
+    <QtMoc Include="NumericalParameter.h">
+      <Filter>Header Files\Models\Parameters</Filter>
+    </QtMoc>
+    <QtMoc Include="NumericalParameterWidget.h">
+      <Filter>Header Files\Widgets</Filter>
+    </QtMoc>
+    <QtMoc Include="BoolParameter.h">
+      <Filter>Header Files\Models\Parameters</Filter>
+    </QtMoc>
+    <QtMoc Include="BoolParameterWidget.h">
+      <Filter>Header Files\Widgets</Filter>
+    </QtMoc>
+    <QtMoc Include="ListParameterBase.h">
+      <Filter>Header Files\Models\Parameters\Base</Filter>
+    </QtMoc>
+    <QtMoc Include="ParameterBase.h">
+      <Filter>Header Files\Models\Parameters\Base</Filter>
+    </QtMoc>
+    <QtMoc Include="ListParameterWidget.h">
+      <Filter>Header Files\Widgets</Filter>
+    </QtMoc>
+    <QtMoc Include="FrameDebug.h">
+      <Filter>Header Files\Services\VideoProcessors\Debugable</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ParametersWindowUI.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppStore.h">
+      <Filter>Header Files\Stores</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewFactory.h">
+      <Filter>Header Files\Factories</Filter>
+    </ClInclude>
+    <ClInclude Include="IVideoProcessorDebugable.h">
+      <Filter>Header Files\Services\VideoProcessors\Debugable</Filter>
+    </ClInclude>
+    <ClInclude Include="IVideoProcessor.h">
+      <Filter>Header Files\Services\VideoProcessors\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="IVideoProcessorConfigurable.h">
+      <Filter>Header Files\Services\VideoProcessors\Configurable</Filter>
+    </ClInclude>
+    <ClInclude Include="ListParameter.h">
+      <Filter>Header Files\Models\Parameters</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenCVFrameDebug.h">
+      <Filter>Header Files\Services\VideoProcessors\Debugable</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

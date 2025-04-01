@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B87B062C-552A-4D5C-BF6C-1DBD4468EE3B}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.8.2_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets;concurrent;multimedia;multimediawidgets;uitools</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.8.2_msvc2022_64</QtInstall>
+    <QtModules>core;gui;widgets;concurrent;multimedia;multimediawidgets;uitools</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\opencv\build\x64\vc16\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world4110d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\opencv\build\x64\vc16\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world4110.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AppStore.cpp" />
+    <ClCompile Include="BoolParameter.cpp" />
+    <ClCompile Include="BoolParameterWidget.cpp" />
+    <ClCompile Include="FrameDebug.cpp" />
+    <ClCompile Include="ListParameterWidget.cpp" />
+    <ClCompile Include="MockVideoProcessor.cpp" />
+    <ClCompile Include="NumericalParameter.cpp" />
+    <ClCompile Include="NumericalParameterWidget.cpp" />
+    <ClCompile Include="OpenCVFrameDebug.cpp" />
+    <ClCompile Include="ParameterBase.cpp" />
+    <ClCompile Include="ParameterGroup.cpp" />
+    <ClCompile Include="ParametersWindow.cpp" />
+    <ClCompile Include="SurveilClipController.cpp" />
+    <ClCompile Include="Tools.cpp" />
+    <ClCompile Include="VideoProcessorBase.cpp" />
+    <ClCompile Include="VideoProcessorDebugable.cpp" />
+    <ClCompile Include="ParametersController.cpp" />
+    <ClCompile Include="ParametersModel.cpp" />
+    <ClCompile Include="VideoProcessorOpenCV.cpp" />
+    <ClCompile Include="ViewFactory.cpp" />
+    <QtRcc Include="SurveilClip.qrc" />
+    <QtUic Include="ParametersWindowUI.ui" />
+    <QtUic Include="SurveilClipUI.ui" />
+    <QtMoc Include="SurveilClipWindow.h" />
+    <ClCompile Include="SurveilClipModel.cpp" />
+    <ClCompile Include="SurveilClipWindow.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SurveilClipModel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SurveilClipController.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Tools.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SurveilClipVideoWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="BoolParameter.h" />
+    <QtMoc Include="BoolParameterWidget.h" />
+    <QtMoc Include="FrameDebug.h" />
+    <ClInclude Include="IVideoProcessor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="VideoProcessorOpenCV.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MockVideoProcessor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="VideoProcessorBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ParametersWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppStore.h" />
+    <QtMoc Include="ParametersController.h" />
+    <QtMoc Include="ParametersModel.h" />
+    <QtMoc Include="VideoProcessorDebugable.h" />
+    <ClInclude Include="IVideoProcessorConfigurable.h" />
+    <ClInclude Include="IVideoProcessorDebugable.h" />
+    <QtMoc Include="ParameterBase.h" />
+    <QtMoc Include="NumericalParameter.h" />
+    <QtMoc Include="ParameterGroup.h" />
+    <QtMoc Include="NumericalParameterWidget.h" />
+    <ClInclude Include="ListParameter.h" />
+    <QtMoc Include="ListParameterBase.h" />
+    <QtMoc Include="ListParameterWidget.h" />
+    <ClInclude Include="OpenCVFrameDebug.h" />
+    <ClInclude Include="ViewFactory.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
