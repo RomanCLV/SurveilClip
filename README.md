@@ -16,3 +16,5 @@ Check the following parameters are correct / added:
 - C/C++ > General > Additional Include Directories : `C:\opencv\build\include`
 - Linker > General > Additional Library Directories : `C:\opencv\build\x64\vc16\lib`
 - Linker > Input > Additional Dependencies : `opencv_world4110d.lib` (for Debug) and `opencv_world4110.lib` (for Release). Adapte the version according yours.
+
+test
